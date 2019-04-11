@@ -14,13 +14,13 @@ namespace Arrays
             char[] letters = "the quick brown fox jumps over the lazy dog".ToCharArray();
             int[] numbers = { 0, 2, 3, 5, 7, 1, 1, 2, 5, 6, 7, 2, 5, 2 };
             string[] poem = "mary had a little lamb its fleece was white as snow".Split();
+
             #region Question 1 Tester
-            
 
             #endregion
 
             #region Question 2 Tester
-            
+
 
             #endregion
 
@@ -30,27 +30,28 @@ namespace Arrays
             #endregion
 
             #region Question 4 Tester
-            
-
+            PrintCharArray(letters);
+            letters.Reverse();
+            PrintCharArray(letters);
             #endregion
 
             #region Question 5 Tester
-            
+
 
             #endregion
 
             #region Question 6 Tester
-            
+
 
             #endregion
 
             #region Question 7 Tester
-            
+
 
             #endregion
 
             #region Question 8 Tester
-            
+
 
             #endregion
 
@@ -58,8 +59,13 @@ namespace Arrays
         #region Question 1
         /*1. Write a method that takes an argument (a char array) and print each item on a single line separated by a space. 
          * From your main, call this method with letters as argument*/
-        
-        
+        static void PrintCharArray(char[] array)
+        {
+            foreach (char item in array)
+            {
+                Console.Write($"{item} ");
+            }
+        }
         #endregion
         #region Question 2
         /*2.	Write a method that takes an argument (an int array) and print each item on a single line separated by a space. 
